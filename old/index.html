@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Jacaranda Estate &amp; Whispering willows</title>
+  <style>
+  <!--
+  body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .style1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #A91C00;
+    font-weight: bold;
+    text-align: center;
+  }
+  .style2 {font-size: 24px; color: #A91C00; font-family: Arial, Helvetica, sans-serif;}
+  .style3, li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 14px;
+  }
+  .style5 {font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 14px; font-weight: bold; }
+  .style6 {
+    font-size: 18px;
+    color: #000000;
+  }
+  -->
+  </style>
+  <script src="Scripts/AC_RunActiveContent.js"></script>
+  <script src="SpryAssets/SpryValidationTextField.js"></script>
+  <script src="SpryAssets/SpryValidationSelect.js"></script>
+  <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+  <link href="SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+
+  <style type="text/css">
+
+  /*Make sure your page contains a valid doctype at the top*/
+  #simplegallery1{ //CSS for Simple Gallery Example 1
+  position: relative; /*keep this intact*/
+  visibility: hidden; /*keep this intact*/
+  border: 0px solid darkred;
+  }
+
+  #simplegallery1 .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+  text-align: left;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .style7 {
+    color: #CC0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #CC0000;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+    color: #CC0000;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #666666;
+  }
+  a:active {
+    text-decoration: none;
+    color: #CC0000;
+  }
+  .style8 {font-size: 18px}
+  .textt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  .texttwhite {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFF;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  </style>
+
+  <script src="simplegallery.js">
+
+  /***********************************************
+  * Simple Controls Gallery- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+  * This notice MUST stay intact for legal use
+  * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+  ***********************************************/
+
+  </script>
+
+  <script>
+  var mygallery=new simpleGallery({
+    wrapperid: "simplegallery1", //ID of main gallery container,
+    dimensions: [900, 675], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+    imagearray: [
+      // ["slide/001.jpg", "", "", "Garderns at Jacaranda Estate"],
+      // ["slide/002.jpg", "", "", "Kukies Pub"],
+      // ["slide/003.jpg", "", "", "Plum Tree and Plum Tree Cottage"],
+      // ["slide/004.jpg", "", "", "Whispering Willow Gazebo"],
+      // ["slide/01.jpg", "", "", "Snow at Jacranda Cottage"],
+      // ["slide/02.jpg", "", "", "Snow at Jacranda Cottage"],
+      // ["slide/03.jpg", "", "", "Snow at Jacranda Cottage"],
+      // ["slide/1.jpg", "", "", "Interior of Plum Tree Cottage"],
+      // ["slide/2.jpg", "", "", "View from Jacaranda cottage"],
+      // ["slide/3.jpg", "", "", "Bathroom of Plum Tree Cottage"],
+      // ["slide/4.jpg", "", "", "View from near Homestay"],
+      // ["slide/5.jpg", "", "", "The suite in Whispering Willows"],
+      // ["slide/6.jpg", "", "", "The suite in Whispering Willows"],
+      // ["slide/7.jpg", "", "", "The entrance to Whispering Willows"],
+      // ["slide/8.jpg", "", "", "A view of both the cottages and the garden"],
+      // ["slide/9.jpg", "", "", "Interior of Whispering Willows"],
+      // ["slide/11.jpg", "", "", "The Cottages at Naldehra"],
+      // ["slide/12.jpg", "", "", ""],
+      // ["slide/13.jpg", "", "", "Jacaranda cottage with sitting room"],
+      // ["slide/14.jpg", "", "", "Interior of the new plum tree cottage"],
+      // ["slide/10.jpg", "", "", "A view of Naldehra Golf Course"],
+      // ["slide/15.jpg", "", "", "Veranda of Jacaranda Cottage"],
+      // ["slide/16.jpg", "", "", "Interior of Jacaranda Cottage"],
+      // ["slide/17.jpg", "", "", "The Garden of Jacaranda Estate"],
+      // ["slide/18.jpg", "", "", "View"],
+      // ["slide/19.jpg", "", "", "Gardens"],
+      // ["slide/20.jpg", "", "", "The Facade of cottage"],
+      // ["slide/21.jpg", "", "", ""],
+      // ["slide/22.jpg", "", "", ""],
+      // ["slide/23.jpg", "", "", ""],
+      // ["slide/24.jpg", "", "", ""],
+      // ["slide/25.jpg", "", "", ""],
+      // ["slide/26.jpg", "", "", ""],
+      // ["slide/27.jpg", "", "", ""],
+      // ["slide/28.jpg", "", "", ""],
+      // ["slide/29.jpg", "", "", ""],
+      // ["slide/30.jpg", "", "", "The Jacaranda Estate"],
+      // ["slide/31.jpg", "", "", ""],
+      // ["slide/32.jpg", "", "", ""],
+      // ["slide/33.jpg", "", "", ""],
+      // ["slide/34.jpg", "", "", ""],
+      // ["slide/35.jpg", "", "", ""],
+      // ["slide/36.jpg", "", "", ""],
+      // ["slide/37.jpg", "", "", ""],
+      // ["slide/38.jpg", "", "", ""],
+      // ["slide/39.jpg", "", "", ""],
+      // ["slide/40.jpg", "", "", ""],
+      // ["slide/41.jpg", "", "", ""],
+      // ["slide/42.jpg", "", "", ""],
+      ["slide/43.jpg", "", "", ""],
+      ["slide/44.jpg", "", "", ""],
+      ["slide/45.jpg", "", "", ""],
+      ["slide/46.jpg", "", "", ""],
+      ["slide/47.jpg", "", "", ""],
+      ["slide/48.jpg", "", "", ""],
+      ["slide/49.jpg", "", "", ""],
+      ["slide/50.jpg", "", "", ""],
+      ["slide/51.jpg", "", "", ""],
+      ["slide/52.jpg", "", "", ""],
+      ["slide/53.jpg", "", "", ""],
+      ["slide/54.jpg", "", "", ""],
+      ["slide/55.jpg", "", "", ""],
+      ["slide/56.jpg", "", "", ""],
+      ["slide/57.jpg", "", "", ""],
+      ["slide/58.jpg", "", "", ""],
+      ["slide/59.jpg", "", "", ""],
+      ["slide/60.jpg", "", "", ""],
+      ["slide/61.jpg", "", "", ""],
+      ["slide/62.jpg", "", "", ""],
+      ["slide/63.jpg", "", "", ""],
+    ],
+    autoplay: [true, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+    persist: false, //remember last viewed slide and recall within same session?
+    fadeduration: 500, //transition duration (milliseconds)
+    oninit:function(){ //event that fires when gallery has initialized/ ready to run
+      //Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+    },
+    onslide:function(curslide, i){ //event that fires after each slide is shown
+      //Keyword "this": references current gallery instance
+      //curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+      //i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+    }
+  })
+  </script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#BFBFBF"><div align="center">
+    <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="5" bgcolor="#FFFFFF"><div align="center"><img src="images/topCurve.png" width="900" height="70" /></div></td>
+          </tr>
+          <tr>
+            <td width="4" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="531" height="80" valign="middle" bgcolor="#FFFFFF"><div align="left"><span class="style1">Jacaranda Estate and Whispering Willows<br />
+            </span><span class="style2">Cottages near Shimla at Naldehra</span><br />
+            </div></td>
+            <td width="137" valign="middle" bgcolor="#FFFFFF"><div align="right"><a href="index.php"><img src="images/Home-icon.png" width="88" height="88" border="0" /></a></div></td>
+            <td width="216" valign="middle" bgcolor="#FFFFFF"><div align="right"><a href="activities.html"><img src="images/activities-header.jpg" width="200" height="40" border="0"/></a></div></td>
+            <td width="12" valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table>
+        <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td bgcolor="#FFFFFF"><div id="simplegallery1"></div></td>
+          </tr>
+        </table>
+        <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="27" rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="843" valign="top" bgcolor="#FFFFFF"><br />
+              <table width="845" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="845" height="30" bgcolor="#FFC000" class="textt">About Us </td>
+              </tr>
+        </table>
+          <p align="justify" class="style3"><strong>Jacaranda Estate</strong> and <strong>Whispering Willows</strong> cottages are located near Shimla in an English garden with deodar and
+                jacaranda trees. Situated on   half an acre of   terraced hills it overlooks on the mountain opposite, Shimla’s   landmarks…
+              The Viceregal Lodge… the Cecil Hotel and the church on the ridge.</p>
+            <p align="justify" class="style3"> Away from the hustle and bustle of the city, yet tantalizingly (one hour drive) close too, the cottages are a stone’s throw
+              from the 100-year-old Naldehra golf course set among gigantic deodars. </p>
+            <p align="justify" class="style3">In these serene surroundings one wakes to enchanting birdsong, the smell of cedar wood and the waft of clean
+            Himalayan air. A naturalists delight! </p>
+            <p align="justify" class="style3">As the owner is also a travel consultant she can plan a trip for you in himachal.. </p>
+            <div>
+            <p class="style3" style="display: inline-block; width: 650px; vertical-align: top;">We,  in the rural part of Himachal are proud to open our home to visitors who are  familiar with the concept.<br />
+              <br />
+              Visitors  who enjoy the tranquility of the countryside, the silence, the verdant green  are welcome to enjoy our homestay.<br />
+              <br />
+              We  are lucky to have Shimla, Kufri and Tattapani an hours drive away from  Jacaranda Estate, where the visitor can avail of golf, white water rafting, hot  springs, trekking on daisy strewn trails, visiting nearby villages and many  other activities. <br /></p>
+
+            <!--
+            Trip Advisor Badge
+            Added: 16th Sept. 2014
+             -->
+             <div id="TA_excellent296" class="TA_excellent" style='display: inline-block;'>
+               <ul id="mqZrM4FW" class="TA_links UmvARKY">
+                <li id="8WnfrqaJrP3S" class="GPjzZwp2h">
+                  <a target="_blank" href="http://www.tripadvisor.in/"><img src="http://c1.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a>
+                </li>
+               </ul>
+             </div>
+             <script src="http://www.jscache.com/wejs?wtype=excellent&amp;uniq=296&amp;locationId=3811843&amp;lang=en_IN&amp;langversion=2"></script>
+             <!-- end of trip advisor badge -->
+
+            <p class="style3" style="display: inline-block; width: 650px; vertical-align: top;">
+            We  have to respect the fragile eco system, thus we encourage and educate the  children and adults to partake in nature walks, observe the flora and fauna and  respect silence as we don&rsquo;t wish to break the laws of the state.
+            </p>
+            <p class="style3" style="display: inline-block; width: 650px; vertical-align: top;">
+            <b>Birders welcome, a large variety of Himalayan birds Can be seen here.</b>
+            </p>
+             </div>
+            </td>
+            <!-- <td width="336" valign="top" bgcolor="#FFFFFF"><div align="center">
+              <br />
+              <table width="250" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="214" height="30" bgcolor="#003300" class="texttwhite">Whispering Willow</td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="images/whisperingwillows.jpg" /></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#003300">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="30" bgcolor="#FF0099"><span class="texttwhite">Jacaranda Cottage</span></td>
+                </tr>
+                <tr>
+                  <td><img src="images/jacarandacottage.jpg" width="240" height="220" /></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FF0099">&nbsp;</td>
+                </tr>
+              </table>
+              <br />
+            </div></td>-->
+            <td width="32" rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF"><div align="center"><span class="style3"><img src="images/partition.png" width="727" height="15" /></span></div></td>
+          </tr>
+        </table>
+        <?php include '_accomodation_2021.php'; ?>
+        <?php // include '_christmas_new_year_rates.php'; ?>
+        <?php include '_summer_rates_2021.php'; ?>
+        <?php // include '_winter_rates_2020.php'; ?>
+        <?php include '_activities.php'; ?>
+        <?php include '_how_to_reach.php'; ?>
+
+        <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20" rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="354" valign="top" bgcolor="#FFFFFF">
+              <div align="left">
+                <table width="360" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="496" height="30" bgcolor="#FFC000" class="textt">Contact Us</td>
+                  </tr>
+                </table>
+                <span class="style5"><br />
+                  <span class="style6">Rita Sawhney</span></span><br />
+                  <span class="style3">+91 98110-16114</span><br />
+                  <span class="style3" id="email"></span>
+              </div>
+              <p align="justify" class="style3">
+                <strong>Bank Name</strong>: ICICI (Shimla Branch)<br />
+                <strong>A/c Name</strong>: Jacaranda Estate<br />
+                <strong>A/c No. </strong>635305500276<br />
+                <strong>IFSC Code:</strong> ICIC0006353<br /><br />
+                Check for availability and booking All packages are sold on full amount on a prepaid basis and are non refundable.</p>
+              <p align="justify" class="style3"><div id="TA_linkingWidgetWAR797" class="TA_linkingWidgetWAR"><ul id="IxlEKW" class="TA_links mL6gYKJAu"><li id="JPQwHq" class="ocmyKS">Write a review of <a target="_blank" href="http://www.tripadvisor.com/Hotel_Review-g1156035-d3811843-Reviews-Jacaranda_Estate_Whispering_Willows_Cottages-Naldehra_Himachal_Pradesh.html">Jacaranda Estate & Whispering Willows Cottages</a></li></ul></div><script src="http://www.jscache.com/wejs?wtype=linkingWidgetWAR&uniq=797&locationId=3811843&lang=en_US&border=true"></script></p>
+            </td>
+            <!--<td width="496" valign="top" bgcolor="#FFFFFF"><div align="center">
+              <table width="444" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                  <?php include '_booking_form.php'; ?>
+                  </td>
+                </tr>
+              </table>
+            </div></td>-->
+            <td width="30" rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF"><div align="center"><span class="style3"><br />
+            <img src="images/partition.png" width="727" height="15" /></span></div></td>
+          </tr>
+        </table>
+        <?php include '_footer.php'; ?>
+    </div></td>
+  </tr>
+</table>
+<script>
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "integer");
+var spryselect1 = new Spry.Widget.ValidationSelect("spryselect1");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
+var spryselect3 = new Spry.Widget.ValidationSelect("spryselect3");
+var spryselect4 = new Spry.Widget.ValidationSelect("spryselect4");
+var spryselect5 = new Spry.Widget.ValidationSelect("spryselect5");
+var spryselect3 = new Spry.Widget.ValidationSelect("spryselect3");
+var spryselect6 = new Spry.Widget.ValidationSelect("spryselect6");
+var spryselect7 = new Spry.Widget.ValidationSelect("spryselect7");
+var spryselect8 = new Spry.Widget.ValidationSelect("spryselect8");
+
+var user = 'ritasawhney';
+var domain = 'hotmail.com';
+var element = document.getElementById('email');
+element.innerHTML = user + '@' + domain;
+</script>
+</body>
+</html>
